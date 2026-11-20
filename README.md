@@ -62,10 +62,14 @@ The production build is generated in `frontend/dist/`.
 
 ## Run the FastAPI Backend Locally
 
+In a separate terminal:
+
 ```bash
 cd backend
 python -m venv .venv
 ```
+
+Activate the environment, then install and start the API:
 
 **Windows PowerShell**
 ```powershell
@@ -85,7 +89,7 @@ The API provides `/`, `/api/health`, and `/api/courses` endpoints. Interactive A
 
 ## Deploy to Vercel
 
-Configure the Vercel project as follows:
+The repository is structured with the frontend in `frontend/`. To deploy the frontend from this repository, configure the Vercel project as follows:
 
 - **Root Directory:** `frontend`
 - **Framework Preset:** Vite
